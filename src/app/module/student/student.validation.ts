@@ -13,6 +13,6 @@ const studentSchema = Joi.object({
   description: Joi.string(),
   quantity: Joi.number(),
   inStock: Joi.boolean(),
-});
+}).unknown(true);
 
 export default studentSchema;
